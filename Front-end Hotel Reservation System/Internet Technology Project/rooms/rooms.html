@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styleroom.css">
+    <script>
+        var time = 1000;
+
+        function changeImg() {
+            var image1 = document.getElementById("slide1");
+            var image2 = document.getElementById("slide2");
+            var image3 = document.getElementById("slide3");
+            var image4 = document.getElementById("slide4");
+            var image5 = document.getElementById("slide5");
+
+
+
+
+            var r1 = Math.floor(1 + Math.random() * 4);
+            var r2 = Math.floor(1 + Math.random() * 4);
+            var r3 = Math.floor(1 + Math.random() * 4);
+            var r4 = Math.floor(1 + Math.random() * 4);
+            var r5 = Math.floor(1 + Math.random() * 4);
+
+
+
+            image1.src = "std" + r1 + ".JPEG";
+            image2.src = "sup" + r2 + ".JPEG";
+            image3.src = "ex" + r3 + ".JPEG";
+            image4.src = "mob" + r4 + ".JPEG";
+            image5.src = "dip" + r5 + ".JPEG";
+            setTimeout("changeImg()", time);
+        }
+
+
+        window.onload = changeImg;
+
+    </script>
+    <div class="topnav">
+        <nav>
+            <a href="#">Home</a>
+            <a href="contact/contact.html">Contact</a>
+            <a href="gallery/gallery.html">Gallery</a>
+            <a href="rooms/rooms.html">Rooms</a>
+            <a href="reservations/reservations.html">Reservation</a>
+        </nav>
+
+        <div class="loc">
+            <img src="placeholder.png" alt="">
+            <span>1525 Boring Lane, Los Angeles, CA</span>
+        </div>
+    </div>
+</head>
+
+<body>
+
+<h1 class="hww">Rooms Description</h1>
+    <table>
+      
+
+
+
+        <tr>
+            <td><img src="blank.JPEG" id="slide1" width="400" height="200"></td>
+
+            <td>
+                <p class="text">Single Room &nbsp;&nbsp;&nbsp;&nbsp;300$</p>
+
+                <label class="lab">
+                    Bed type: 1 Single bed,fridge,bathroom,
+
+                    View: Garden view, City view
+                </label>
+            </td>
+
+
+
+        </tr>
+
+        <tr>
+            <td> <img src="blank.JPEG" id="slide2" width="400" height="200"></td>
+
+
+
+
+            <td>
+                <p class="text">Double Room &nbsp;&nbsp;&nbsp;&nbsp;500$</p>
+                <label class="lab">
+
+                    Bed type: 1 Double bed or 2 Single beds or 2 Single beds or 1 Double bed
+                    View: Garden view, City view
+                </label>
+
+            </td>
+
+
+
+
+        </tr>
+        <tr>
+            <td><img src="blank.JPEG" id="slide3" width="400" height="200"></td>
+
+            <td>
+                <p class="text">Standard King Room
+                    &nbsp;&nbsp;&nbsp;&nbsp;500$</p>
+
+                <label class="lab">
+                    Bed type: 1 King-size bed
+                </label>
+
+            </td>
+
+
+
+
+        </tr>
+        <tr>
+            <td><img src="blank.JPEG" id="slide4" width="400" height="200"></td>
+            <td>
+                <p class="text">One-Bedroom Suite &nbsp;&nbsp;&nbsp;&nbsp;650$</p>
+                <label class="lab">
+
+                    Bed type: 1 Double bed or 1 Single bed or Sleeping arrangements for 3 persons
+                </label>
+            </td>
+
+
+
+        </tr>
+        <tr>
+            <td><img src="blank.JPEG" id="slide5" width="400" height="200"></td>
+
+            <td>
+                <p class="text">Standard Family Room &nbsp;&nbsp;&nbsp;&nbsp;700$</p>
+<label class="lab">
+
+                Bed type: 1 Single bed,fridge,bathroom,
+                View: Garden view, City view
+       </label>
+                 </td>
+
+
+
+
+        </tr>
+
+
+
+
+
+
+    </table>
+</body>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<script src ="rooms.js"></script>
+
+<script>
+var i = 0 ;
+var images = new Array(4);
+var time = 1000;
+
+for ( i = 0 ; i < 4 ; i++)
+{
+images[i] = "std" + (i+1) + ".jpeg";
+}
+
+ function changeImg(){
+ document.slide1.src = images[i];
+  document.slide2.src = images[i];
+  document.slide3.src = images[i];
+  document.slide4.src = images[i];
+  document.slide5.src = images[i];
+
+ if ( i < images.length -1 ){
+ i++;
+} 
+
+else {
+i = 0 ;
+}
+
+setTimeout ("changeImg()" , time ) ;
+
+ }
+ window.onload = changeImg ; 
+
+</script>
+
+</head>
+<body>
+
+<img name ="slide1" width = "400" height = "200" >
+<img name ="slide2" width = "400" height = "200" >
+<img name ="slide3" width = "400" height = "200" >
+<img name ="slide4" width = "400" height = "200" >
+<img name ="slide5" width = "400" height = "200" >
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+
+    <script>
+        var time = 1000;
+
+        function changeImg() {
+            var image1 = document.getElementById("slide");
+            var r1 = Math.floor(1 + Math.random() * 5);
+
+            image1.src = "kemp" + r1 + ".JPEG";
+            setTimeout("changeImg()", time);
+        }
+
+        window.onload = changeImg;
+
+        function generate_ID() {
+
+            var x = document.getElementById("getid");
+            x = Math.floor(1 + Math.random() * 1000);
+            alert(x);
+
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/style3.css" type="text/css">
+</head>
+
+<body>
+    <div class="topnav">
+        <nav>
+            <a href="#">Home</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <div class="loc">
+            <img src="placeholder.png" alt="">
+            <span>1525 Boring Lane, Los Angeles, CA</span>
+        </div>
+
+    </div>
+
+    <div><img src="blank.JPEg" id="slide" class="bg"></div>
+
+
+
+
+
+    <form class="bgtext">
+        <span style="font-size: 50px;">Online Reservation
+        </span>
+        <br><br><br>
+
+        <label class="tablelabel"> Check in : </label><br>
+        <input class="inputforform2" type="date"><br><br>
+        <label class="tablelabel"> Check out : </label> <br>
+        <input type="date"><br><br>
+
+        <label class="tablelabel">Adults : </label>
+        <input class="inputforform" type="number" min="1" max="4" value="1">
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label class="tablelabel">Children : </label>
+        <input class="inputforform" type="number" min="0" max="5" value="0">
+        <br><br>
+
+        <input type="button" value="Next" id="next" onclick="window.location.href = 'rooms.html';">
+
+        <label>You Must Get ID first</label>
+        <input type="button" value="GetID" id="getid" onclick="generate_ID()">
+
+    </form>
+
+</body>
+
+
+
+<footer class="footer-section">
+    <hr>
+
+    <h2>Hotel</h2>
+    <table>
+        <tr>
+            <td><img src="placeholder.png" alt=""></td>
+            <td><span>1525 Boring Lane, Los Angeles, CA</span> </td>
+
+            <td class="td2">
+                <h2> <img src="phone.png">&nbsp;&nbsp; Reception</h2> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; +5832415269
+            </td>
+
+            <td class="td2">
+                <h2><img src="phone.png">&nbsp;&nbsp; Restaurant</h2> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; +5832415258
+            </td>
+        </tr>
+
+    </table>
+</footer></html>

@@ -1,0 +1,52 @@
+.room-name{font: 400 11px Imprima,sans-serif;
+color: #333;
+font-family: Imprima,sans-serif;
+margin: 0;
+    padding: 0;}
+
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+.loc {
+    color: white;
+    float: right;
+
+  font-size: 20px;
+}
+.text{
+font-weight: bolder;
+    font-size: 40px;
+
+
+}
+.lab{
+    font-size: 25px;
+    
+    
+}
+
+.hww{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    
+}
